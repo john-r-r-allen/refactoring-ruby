@@ -34,7 +34,7 @@ class Rental
     1.5 + ((days_rented - 3) * 1.5)
   end
 
-  def rental_points
+  def frequent_renter_points
     return 2 if movie.price_code == Movie::NEW_RELEASE && days_rented > 1
 
     1

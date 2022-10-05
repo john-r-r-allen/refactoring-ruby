@@ -17,7 +17,7 @@ class Customer
     rentals.each do |rental|
       result += rental.display_cost
       total_rental_cost += rental.cost
-      frequent_renter_points += rental.rental_points
+      frequent_renter_points += rental.frequent_renter_points
     end
     result += statement_footer(total_rental_cost, frequent_renter_points)
     result
