@@ -6,7 +6,7 @@ class Movie
   attr_reader :title, :price_code
 
   def price_code=(new_price_code)
-    price_code = new_price_code
+    @price_code = new_price_code
   end
 
   def initialize(title, initial_price_code)
