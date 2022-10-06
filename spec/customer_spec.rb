@@ -2,6 +2,9 @@ require "spec_helper"
 require "customer"
 require "movie"
 require "rental"
+require "regular_price"
+require "new_release_price"
+require "childrens_price"
 
 RSpec.describe Customer do
   let(:name) { "John Doe" }
