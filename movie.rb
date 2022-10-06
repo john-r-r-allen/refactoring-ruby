@@ -6,12 +6,14 @@ class Movie
   attr_reader :title
   attr_accessor :price_code
 
-  def initialize(title, price_code)
-    @title = title
-    @price_code = price_code
+  def price_code=(new_price_code)
+    price_code = new_price_code
   end
 
-
+  def initialize(title, initial_price_code)
+    @title = title
+    @price_code = initial_price_code
+  end
 
   def charge(days_rented)
     @charge ||=
