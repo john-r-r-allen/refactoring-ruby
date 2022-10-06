@@ -3,8 +3,7 @@ class Movie
   NEW_RELEASE = 1
   CHILDRENS = 2
 
-  attr_reader :title
-  attr_accessor :price_code
+  attr_reader :title, :price_code
 
   def price_code=(new_price_code)
     price_code = new_price_code
