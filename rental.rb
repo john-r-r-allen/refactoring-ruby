@@ -11,9 +11,7 @@ class Rental
   end
 
   def frequent_renter_points
-    return 2 if movie.price_code == Movie::NEW_RELEASE && days_rented > 1
-
-    1
+    movie.frequent_renter_points(days_rented)
   end
 
   def display_cost
