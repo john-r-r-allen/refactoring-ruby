@@ -1,4 +1,6 @@
 class ChildrensPrice
+  include DefaultPrice
+
   def charge(days_rented)
     return 1.5 if days_rented <= 3
 

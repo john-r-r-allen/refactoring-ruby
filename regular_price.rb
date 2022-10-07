@@ -1,4 +1,6 @@
 class RegularPrice
+  include DefaultPrice
+
   def charge(days_rented)
     return 2 if days_rented <= 2
 
