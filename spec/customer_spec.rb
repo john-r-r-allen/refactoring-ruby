@@ -10,9 +10,9 @@ require "childrens_price"
 RSpec.describe Customer do
   let(:name) { "John Doe" }
   let(:subject) { described_class.new(name) }
-  let(:movie_one) { Movie.new("The Matrix", Movie::REGULAR) }
-  let(:movie_two) { Movie.new("Jeepers Creepers Reborn", Movie::NEW_RELEASE) }
-  let(:movie_three) { Movie.new("Moana", Movie::CHILDRENS) }
+  let(:movie_one) { Movie.new("The Matrix", RegularPrice.new) }
+  let(:movie_two) { Movie.new("Jeepers Creepers Reborn", NewReleasePrice.new) }
+  let(:movie_three) { Movie.new("Moana", ChildrensPrice.new) }
 
   describe "#statement" do
     context "with no rentals" do
